@@ -3,10 +3,10 @@
 ## Dependencies
 1. Install Node:
 https://nodejs.org/en/download/
-
+```
 #Install NPM package manager
 $ sudo npm install npm -g
-
+```
 ## Installation
 
 ### PART I (get everything to work)
