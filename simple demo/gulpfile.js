@@ -76,13 +76,9 @@ gulp.task('default', ['chewingum', 'watch'])
 // Style
 // Will combine and minify all component styles
 /* gulp.task('style', function (done) {
-  var processors = [autoprefixer({browsers: ['last 2 versions', 'ie >= 9', 'and_chr >= 2.3']})]
-  return gulp.src(src + '/style/style.scss')
-    .pipe(sass({
-      sourceComments: true
-    }).on('error', sass.logError))
-    .pipe(postcss(processors))
-    .pipe(gulp.dest(dest + '/assets/css/'))
+  return gulp.src(.'/sass/style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(dest + '/assets/'))
     .pipe(browserSync.stream())
 })*/
 
@@ -91,7 +87,7 @@ gulp.task('default', ['chewingum', 'watch'])
 // gulp.task('javascript', function (done) {
 //   return gulp.src(src + '/**/*.js')
 //     .pipe(concat('components.js'))
-//     .pipe(gulp.dest(dest + '/assets/js/'))
+//     .pipe(gulp.dest(dest + '/assets/'))
 // })
 
 // DEFAULT
